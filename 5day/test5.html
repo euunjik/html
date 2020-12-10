@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {margin:0; padding:0;}
+        /* html {font-size:24px;} */
+        a {text-decoration: none;}
+        .wrapper {
+            background-color:#333; 
+            position: sticky; 
+            top:0px;
+        }
+        .container {
+            width: 80%; margin: 0 auto;
+        }
+        .upper {
+            height: 30vh;
+        }
+        .upper img {
+            width: 100%; height: 100%; 
+            /* object-fit: cover; */
+        }
+        
+        nav {background-color: #333; color: #eee;}
+        .wrapper ul {text-align: center;}
+        .wrapper ul > li {display:inline-block; padding: 0.3rem 0.5rem}
+        .wrapper ul > li > a {color:inherit;}
+        .wrapper ul > li:nth-child(1) div {
+            width:20px; height:20px; 
+            display: inline-block; 
+            border-radius: 50%;
+        }
+        .wrapper ul > li:nth-child(1) div:nth-child(1) {
+            border: 3px solid red;
+        } 
+        .wrapper ul > li:nth-child(1) div:nth-child(2) {
+            border:3px solid blue; 
+            margin-left: -14px;
+        } 
+        .wrapper ul > li:nth-child(1) div:nth-child(3) {
+            border: 3px solid green; 
+            margin-left:-14px;
+        }
+        
+/* 메인 영역 */
+        .wrap-main {background-color: #cccccc;}
+        main {background-color:#fff;}
+/* 푸터 영역 */
+        footer {background-color: #333333; position:sticky; bottom:0px;}
+/* 좌측광고 */
+
+.adv {
+    background-color: red; 
+    color:#ccc; 
+    position:fixed;
+    top:200px; 
+    right:50px; 
+    padding:10px;}
+.adv ul {list-style: none;}
+
+
+</style>
+</head>
+<body>
+    <div class="upper">
+    <img src="/img/bg6.jpg" alt="이미지가 없습니다.">
+    </div>
+    <div class="wrapper">
+        <nav class="container">
+        
+        <ul>
+            <li>
+                <div></div>
+                <div></div>
+                <div></div>
+            </li>
+            <li><a href="http://www.naver.com">menu1</a></li>
+            <li><a href="http://www.google.com">menu2</a></li>
+            <li><a href="http://www..com">menu3</a></li>
+        </ul>
+        </nav>
+    </div>
+    <div class="wrap-main">
+    <main class="container">
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem quos tenetur illo animi blanditiis commodi dolor nesciunt est asperiores quasi rerum, eligendi dignissimos ullam, ipsam quia iusto ratione hic similique.
+            Nulla eaque voluptatem ut voluptatibus perferendis earum. Reiciendis, porro asperiores aliquam animi nemo accusamus nesciunt dignissimos? Obcaecati deleniti eum dolor laboriosam corrupti aperiam accusantium dignissimos, numquam sit autem voluptate facilis.
+            Doloribus cum eum debitis blanditiis deserunt itaque velit ipsam fugiat est totam perspiciatis maiores, ut, optio molestias dignissimos incidunt expedita voluptate maxime dolorum obcaecati? Quae dicta tempore quis. Beatae, incidunt?
+            Ducimus molestias, quae accusamus excepturi veritatis doloremque, a esse rerum consequatur ex facere ab ad? Voluptatum voluptas, nemo sit aut sunt ullam mollitia ex nisi pariatur delectus unde, fuga alias.
+        </p>
+    </main>
+    </div>
+    <footer>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, quod in nam eveniet provident consequatur aut dolore temporibus aliquam officia voluptatibus error quos at ipsa architecto deleniti accusamus saepe non?
+        </p>
+    </footer>
+    <div class="adv">
+        <ul>
+            <li>내용1</li>
+            <li>내용2</li>
+            <li>내용3</li>
+            <li>내용4</li>
+            <li>내용5</li>
+        </ul>
+    </div>
+</body>
+</html>

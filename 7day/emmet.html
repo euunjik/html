@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {background-color: blue;}
+    </style>
+</head>
+<body>
+    <!-- [child ">"] -->
+
+    <ul>
+        <li><a href="#"></a></li>
+    </ul>
+
+    <!-- [sibling "+"] -->
+
+    <header></header>
+    <nav></nav>
+    <main></main>
+    <footer></footer>
+
+
+    <!--header+nav+(main>aside+section)+footer-->
+
+    <header></header>
+    <nav></nav>
+    <main>
+        <aside></aside>
+        <section></section>
+    </main>
+    <footer></footer>
+
+    <!-- [climb-up "^"] -->
+
+    <ul>
+        <li></li>
+    </ul>
+    <a href=""></a>
+
+    <!-- [grouping "()"] -->
+    
+    <div>
+        <header>
+            <ul></ul>
+        </header>
+        <footer>
+            <p></p>
+        </footer>
+    </div>
+
+    <!--id class를 갖는 div-->
+    <!--#header-->
+    <div id="header"></div>
+    <!--.title-->
+    <div class="title"></div>
+    <!--form#serch.wide-->
+    <form action="" id="search" class="wide"></form>
+    <!--p.class1.class2.class3-->
+    <p class="class1 class2 class3"></p>
+
+
+    <!--attribute []-->
+    <input type="checkbox" name="hobby" id="hobby" checked="checked">
+
+    <!--text:{}-->
+    <a href="">click me</a>
+    <p>click me</p>
+
+    
+</body>
+</html>

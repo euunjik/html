@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    html {height: 100%; background-color: slategrey; margin: 0 auto;}
+    body {height: 100%; background-color: rgb(51, 51, 51); text-align: center; color: red; font-size: 40px; padding: 10px;}
+    header, nav, article, aside,footer { background-color: aliceblue; border-radius: 15px}
+    header {height: 15%;}
+    section {background-color: skyblue; float:left; width: 61%; height:60%; border-radius: 15px; margin: 10px;}
+    nav {float:left; background-color: aliceblue; width:18%; height:60%; margin-top: 10px;}
+    aside {width: 18%; height: 60%; float: left; background-color:aliceblue; margin-top: 10px;}
+    footer.bottom {width: 100%; height:10%;}
+    .clearfix {clear: both; /*float 중지*/}
+</style>
+<body>
+    <header>header</header>
+    <nav>nav</nav>
+    <section>
+        section
+        <header>header</header>
+        <article>article</article>
+        <footer>footer</footer>
+    </section>
+    <aside>aside</aside>
+    <footer class="bottom clearfix">footer</footer>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const button_click_f = function (evt) {
+            console.log (evt. target.textContent);
+            const btnText = evt.target.textContent; 
+            switch(btnText) {
+                case "BACK" : //입력된 문자열의 가장 오른쪽 문자 하나를 제거
+                    $input.value = $input.value.substr(0,$input.value.length-1);
+                    if($input.value.length == 0) {
+                    $input.value = 0;
+                    }
+                    
+                    break;
+                case "CE" : case"C" :
+                    $input.value = 0;
+                    break;
+                case "=" : //입력된 문자열을 수식평가하여 입력 필드에 결과를 표시
+                $input.value = eval ($input.value);
+                break;
+            
+                case "NONE" :
+                    break;
+                
+                default : //숫자 or 연산자 : 입력된 문자열의 오른쪽에 추가
+                    if ($input.value == 0) {
+                        $input.value = btnText;
+                    }else{
+                        $input.value += btnText;
+                    }
+                
+            }
+        }
+
+    </script>
+</body>
+</html>

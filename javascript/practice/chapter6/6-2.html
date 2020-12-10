@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Script 태그에 자바스크립트 작성 </title>
+    <script>
+        function over(obj) { //obj는 전달받은 img 태그를 가리킴
+            obj.src = "2.jpg";
+            
+        }
+
+        function out(obj) {
+            obj.src = "1.png";
+        }
+     </script>
+</head>
+<body>
+    
+    <h3>마우스 올려 보세요</h3>
+    <hr>
+    <img src="1.png" alt="이미지"
+        onmouseover = "over(this)" 
+        onmouseout = "out(this)"
+    >
+    <!-- this는 현재 img 태그를 가리키는 자바 스크립트 키워드  -->
+</body>
+</html>

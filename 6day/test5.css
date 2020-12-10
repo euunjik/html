@@ -1,0 +1,110 @@
+
+* {margin:0; padding:0;}
+
+.container {
+    margin: 0 auto; width: 70%;
+    text-align: center;
+    color: white;
+    
+}
+
+
+
+/* upper most */
+
+.uppermost {
+    background-color: #b71c1c;
+    
+}
+
+.container-um {
+    background-color: #7f0000;
+}
+
+/* header */
+
+header {
+    background-color: transparent;
+    height:100px;
+    
+}
+
+.container-h {
+    background-color: #9a0007;
+    background-image: url(/img/bg4.jpg);
+    background-position: center;
+    background-size: cover;
+    height:100px;
+}
+
+/* nav */
+
+nav {
+    background-color: transparent;
+}
+
+.container-n {
+    background-color: #ba000d ;
+}
+
+/* main */
+
+main {
+    background-color: transparent;
+    
+}
+
+.container-m {
+    background-color: transparent;
+    overflow: hidden;
+
+}
+
+.container-m section {
+    float: left;
+
+}
+.container-m section.s1 {
+    width:50%;
+    background-color: orange;
+    height: 500px;
+    
+}
+.container-m section.s2 {
+    width:20%;
+    background-color: orangered;
+    height: 500px;
+}
+.container-m section.s3 {
+    width:30%;
+    background-color: red;
+    height: 500px;
+}
+
+
+/* footer menu */
+
+.footermenu {
+    background-color: #ffcdd2;
+  
+}
+
+.container-fm {
+    background-color: #cb9ca1;
+}
+
+/* footer */
+
+footer {
+    background-color: #ffebee;
+}
+
+.container-f {
+    background-color: #ccb9bc;
+}
+
+
+/*clearfix*/
+.clearfix {
+    clear:both; /*float의 왼쪽, 오른쪽 흐름을 차단*/
+}

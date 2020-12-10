@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form{
+            background-color: yellow;
+        }
+
+        input {
+            background-color: blue;
+        }
+
+    </style>
+</head>
+<body>
+
+    <form action="">
+        <input type="checkbox"> 목요일
+    </form>
+
+    <script>
+        //document.querySelector - > 찾기
+        //input -> 찾고자 하는 요소
+        //대괄호 -> 찾고자 하는 속성 
+        document.querySelector("input[type=checkbox]")
+
+        //$input 자체가 DOM 객체가 된다
+        const $input = document.querySelector("input[type=checkbox]");
+        const $form = document.querySelector("form");
+        //센서 달아주기 (이벤트 리스너)
+        $input.addEventListener('click',function(evt){
+            console.log(evt);
+        },false);
+        // 캡쳐 단계에선 true, 버블링 단계에선 false
+        //첫번째 매개 변수로는 이벤트 객체
+        //이벤트 객체를 다른 줄로 옮긴다
+        // 자바스크립트에서 이벤트 객체는 중괄호로 표현 {} 
+        $form.addEventListener('click',function(evt){
+            console.log(evt);
+        },false);
+
+    </script>
+
+</body>
+</html>

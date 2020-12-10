@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="myDiv">
+        <!-- <span>hello</span> -->
+    </div>
+    <script>
+        // 자바에서 변수는 const (변경 없는 변수)
+        // 변경 있는 변수일 경우 let (값을 바꿔야 할때)
+        const $myDiv = document.getElementById('myDiv');
+        const $span = document.createElement("span");
+        $span.innerHTML = 'hello';
+        $span.style.backgroundColor = 'yellow';
+        $span.style.fontSize = '2em';
+        $span.addEventListener("click",function(){
+            
+            $span.style.fontWeight = 'bold';
+            $span.style.color = 'blue';
+
+        });
+        $span.setAttribute("id", "hi;")
+        $myDiv.appendChild($span);
+
+    </script>
+</body>
+</html>

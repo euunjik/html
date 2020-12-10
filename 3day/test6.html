@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        html,body {height:100%; width:100%; margin: 0 auto;}
+        html {background-color: slategray;}
+        body {background-color: rgb(44, 44, 44); margin: 1%; color: black; text-align: center;}
+        .content> .left {background-color: aliceblue; float: left; width:70%;}
+        .content>.left > .S1 {height:30vh;}
+        .content>.left > .S2 {height:40vh; position: relative;}
+        .content> .right {background-color: skyblue; float: left; width:30%;}
+        header {background-color: aqua; height: 10vh;}
+        nav {background-color:aquamarine; height:10vh;}
+        .content>.right> article { height: 20vh;}
+        .content>.right> aside { height: 50vh;}
+        .clearfix {clear: both;}
+        footer {height: 10vh; background-color: bisque;}
+        .content>.left>.S2> footer {position:absolute; bottom:0; width:100%; /*부모요소에 display static이 아닌 요소를 기준으로 위치를 잡습니다.*/}
+
+
+    </style>
+
+</head>
+<body>
+
+    <div class="title">
+        <header>header</header>
+        <nav>nav</nav>
+    </div>
+<div class="content">
+
+    <div class="left">
+        <section class="S1">section</section>
+
+        <section class="S2">
+            <header>header</header>
+            section
+            <footer>footer</footer>
+        
+        </section>
+      
+
+    </div>
+
+    <div class="right">
+       
+        <article>article</article>
+       <aside>aside</aside>
+       
+    </div>
+
+</div>
+
+<div class="clearfix">
+    <footer>footer</footer>
+</div>
+
+</body>
+</html>
